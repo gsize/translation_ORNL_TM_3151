@@ -6,4 +6,4 @@ ORNL_TM_3151_PPT
 *.pdf
 *.idx
 *.aux
-
+tmp/
