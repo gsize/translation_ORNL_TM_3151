@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{scrreprt}
+%\documentclass[12pt,a4paper]{report}
+\usepackage{CJK,CJKnumb}
+\usepackage{indentfirst}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\graphicspath{{Figure/}}
+\makeindex
+\setlength{\parindent}{2em}
+
+\begin{document}             % End of preamble and beginning of text.
+
+\begin{CJK*}{UTF8}{gbsn}
+%\begin{CJK*}{GBK}{song}
+%\CJKcaption{GBK}
+%\CJKindent
+                             % The preamble begins here.
+\title{A Study of Fission Products in the Molten-Salt Reactor Experiment by $\gamma$\ Spectrometry}  % Declares the document's title.
+\subtitle{通过$\gamma$\ 谱测量法研究MSRE中的裂变产物}
+\author{A. Houtzeel \and F.  F. Dyer}      % Declares the author's name.
+\date{August  1972}      % Deleting this command produces today's date.
+
+\maketitle                   % Produces the title.
+\renewcommand\abstractname{摘~要}
+\input{abstract.tex}%插入摘要
+
+\renewcommand\contentsname{目~录}
+\tableofcontents
+
+\input{chapter_1.tex}%Introduction to the molten salt reactor experiment
+\input{chapter_2.tex}%Objectives of this gamma-ray spectrometry study
+\input{chapter_3.tex}%Description and performance of equipment
+\input{chapter_4.tex}%Analysis of spectra
+\input{chapter_5.tex}%Calibration
+\input{chapter_6.tex}%Measurements
+\input{chapter_7.tex}%Results
+\input{chapter_8.tex}%Conclusions
+\input{chapter_9.tex}%Epilogue
+
+\printindex
+
+\end{CJK*}
+\end{document}
