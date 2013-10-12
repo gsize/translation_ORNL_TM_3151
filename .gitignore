@@ -6,5 +6,9 @@ ORNL_TM_3151_PPT
 *.pdf
 *.idx
 *.aux
+*.dvi
+*.ind
+*.ilg
 *.swp
 tmp/
+bin/
